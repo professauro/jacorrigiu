@@ -1,0 +1,57 @@
+<!--suppress CheckDtdRefs -->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Política de Exclusão de Dados</title>
+    <meta name="version" number="1">
+    <style>
+            ol {
+                counter-reset: section; /* Cria um contador chamado 'section' */
+                list-style-type: none; /* Remove a numeração padrão */
+                padding-left: 0 /* Espaçamento para indentação */
+            }
+            li {
+                counter-increment: section; /* Incrementa o contador a cada li */
+                text-align: justify;
+                text-justify: inter-word;
+                padding-left: 0
+            }
+            ol > li:before {
+                content: counter(section) ". "; /* Adiciona ponto após o número para itens primários */
+            }
+            ol ol > li:before {
+                content: counters(section, ".") " "; /* Numeração para itens aninhados */
+            }
+            p {
+                text-align: justify;
+                text-justify: inter-word;
+            }
+        </style>
+</head>
+<body>
+
+<h1>POLÍTICA DE EXCLUSÃO DE DADOS</h1>
+
+<p>No aplicativo "JáCorrigiu?", todos os dados coletados são essenciais para a plena execução do aplicativo. Gostaríamos de tranquilizá-lo sobre a segurança e privacidade dos seus dados, e esclarecer que:</p>
+
+<ul>
+    <li><strong>Dados Armazenados Localmente</strong>: Todos os dados coletados, incluindo informações de OAuth e acesso à conta do Google Drive, são armazenados exclusivamente no próprio dispositivo do usuário. Não armazenamos nenhum dado em nossos servidores.</li>
+    <li><strong>Exclusão de Dados</strong>: Para deletar todos os dados coletados pelo "JáCorrigiu?", basta limpar os dados do aplicativo diretamente no seu dispositivo. Esse procedimento pode ser feito através das configurações do seu dispositivo, sem a necessidade de qualquer solicitação adicional ao desenvolvedor.</li>
+</ul>
+
+<h2>Como Limpar os Dados do Aplicativo</h2>
+
+<ol>
+    <li>Abra as Configurações do seu dispositivo.</li>
+    <li>Vá para "Aplicativos" ou "Gerenciamento de Aplicativos".</li>
+    <li>Encontre e selecione o aplicativo "JáCorrigiu?".</li>
+    <li>Toque em "Armazenamento".</li>
+    <li>Selecione a opção "Limpar Dados".</li>
+    <li>Ao realizar essas etapas, todos os dados armazenados localmente pelo aplicativo serão excluídos permanentemente.</li>
+</ol>
+
+<p>Agradecemos por usar o "JáCorrigiu?" e estamos comprometidos em proteger a sua privacidade e garantir uma experiência segura e eficiente.</p>
+
+</body>
+</html>
